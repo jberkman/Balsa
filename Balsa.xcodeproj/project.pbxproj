@@ -10,6 +10,7 @@
 		16FE811D1BBF602A00F1A56C /* Balsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 16FE811C1BBF602A00F1A56C /* Balsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16FE81241BBF602A00F1A56C /* Balsa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16FE81191BBF602A00F1A56C /* Balsa.framework */; settings = {ASSET_TAGS = (); }; };
 		16FE81291BBF602A00F1A56C /* BalsaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FE81281BBF602A00F1A56C /* BalsaTests.swift */; };
+		16FE81361BBF604900F1A56C /* Balsa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FE81351BBF604900F1A56C /* Balsa.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		16FE81231BBF602A00F1A56C /* BalsaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalsaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FE81281BBF602A00F1A56C /* BalsaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalsaTests.swift; sourceTree = "<group>"; };
 		16FE812A1BBF602A00F1A56C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16FE81351BBF604900F1A56C /* Balsa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Balsa.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		16FE811B1BBF602A00F1A56C /* Balsa */ = {
 			isa = PBXGroup;
 			children = (
+				16FE81351BBF604900F1A56C /* Balsa.swift */,
 				16FE811C1BBF602A00F1A56C /* Balsa.h */,
 				16FE811E1BBF602A00F1A56C /* Info.plist */,
 			);
@@ -142,6 +145,7 @@
 		16FE81101BBF602A00F1A56C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "jacob berkman";
 				TargetAttributes = {
@@ -193,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16FE81361BBF604900F1A56C /* Balsa.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +312,7 @@
 		16FE812E1BBF602A00F1A56C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,12 +323,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.87k.Balsa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		16FE812F1BBF602A00F1A56C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
